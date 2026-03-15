@@ -8,9 +8,10 @@
 
 /**
  * epoll的使用:
- * 1. epoll_create
- * 2. epoll_ctl (add, mod, del)
- * 3. epoll_wait
+epoll_create → 创建一个 事件收集器
+epollfd → 收集器的“ID”，告诉内核往哪个收集器注册 socket
+epoll_ctl → 往收集器里加/删 socket
+epoll_wait → 查看收集器里哪些 socket “响铃”（有事件发生）
  **/
 
 class Channel;
